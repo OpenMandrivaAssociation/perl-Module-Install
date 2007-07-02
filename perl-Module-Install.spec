@@ -1,6 +1,6 @@
 %define	module	Module-Install
 %define	name	perl-%{module}
-%define version 0.64
+%define version 0.67
 %define release %mkrel 1
 
 Name:		%{name}
@@ -10,7 +10,7 @@ Summary:	Standalone, extensible Perl module installer
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/Module/%{module}-%{version}.tar.bz2
+Source:		http://www.cpan.org/modules/by-module/Module/%{module}-%{version}.tar.gz
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
@@ -61,4 +61,3 @@ FOO
 %{perl_vendorlib}/Module
 %{perl_vendorlib}/inc/Module
 %{_mandir}/man3/*
-
