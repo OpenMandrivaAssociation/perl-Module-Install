@@ -25,7 +25,6 @@ BuildRequires:	perl(File::Spec)
 BuildRequires:	perl(Test::Harness) >= 2.03
 BuildRequires:	perl(Test::More) >= 0.42
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module provides a drop-in replacement for ExtUtils::MakeMaker. For
