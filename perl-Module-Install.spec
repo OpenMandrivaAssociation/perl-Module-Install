@@ -20,6 +20,7 @@ BuildRequires:	perl(PAR::Dist)
 BuildRequires:	perl(Archive::Tar)
 BuildRequires:	perl(ExtUtils::ParseXS)
 BuildRequires:	perl(YAML)
+BuildRequires:	perl(YAML::Tiny)
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(File::Spec)
 BuildRequires:	perl(Test::Harness) >= 2.03
