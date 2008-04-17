@@ -23,6 +23,7 @@ BuildRequires:	perl(YAML)
 BuildRequires:	perl(YAML::Tiny)
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(File::Spec)
+BuildRequires:	perl(File::Remove)
 BuildRequires:	perl(Test::Harness) >= 2.03
 BuildRequires:	perl(Test::More) >= 0.42
 BuildArch:	noarch
