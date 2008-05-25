@@ -43,12 +43,12 @@ module works.
 %build
 chmod 644 Changes
 find lib -type f | xargs chmod 644
-%{__perl} Makefile.PL INSTALLDIRS=vendor <<FOO
-n
-FOO
+%{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
+# this one requires a working CPAN configuration
+rm -f t/03_autoinstall.t
 %__make test
 
 %install
