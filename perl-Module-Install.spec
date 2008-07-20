@@ -1,6 +1,6 @@
 %define	module	Module-Install
 %define	name	perl-%{module}
-%define version 0.75
+%define version 0.76
 %define release %mkrel 1
 
 Name:		%{name}
@@ -63,4 +63,5 @@ rm -f t/03_autoinstall.t
 %doc README Changes
 %{perl_vendorlib}/Module
 %{perl_vendorlib}/inc/Module
+%{perl_vendorlib}/auto/share/dist/Module-Install
 %{_mandir}/man3/*
