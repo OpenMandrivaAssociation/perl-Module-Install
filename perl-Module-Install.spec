@@ -1,6 +1,6 @@
 %define	module	Module-Install
 %define	name	perl-%{module}
-%define version 0.76
+%define version 0.77
 %define release %mkrel 1
 
 Name:		%{name}
