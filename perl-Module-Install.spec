@@ -1,6 +1,6 @@
 %define	module	Module-Install
 %define	name	perl-%{module}
-%define version 0.78
+%define version 0.79
 %define release %mkrel 1
 
 Name:		%{name}
@@ -18,8 +18,8 @@ BuildRequires:	perl(Module::ScanDeps)
 BuildRequires:	perl(Module::CoreList)
 BuildRequires:	perl(PAR::Dist)
 BuildRequires:	perl(Archive::Tar)
-BuildRequires:	perl(ExtUtils::Install) >= 1.50
-BuildRequires:	perl(ExtUtils::ParseXS) >= 2.19
+BuildRequires:	perl(ExtUtils::Install)
+BuildRequires:	perl(ExtUtils::ParseXS)
 BuildRequires:	perl(YAML)
 BuildRequires:	perl(YAML::Tiny)
 BuildRequires:	perl(Module::Build)
