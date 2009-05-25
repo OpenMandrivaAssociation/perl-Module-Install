@@ -16,7 +16,7 @@ BuildRequires:	perl(Archive::Tar)
 BuildRequires:	perl(Devel::PPPort) >= 3.16
 BuildRequires:	perl(ExtUtils::Install) >= 1.52
 BuildRequires:	perl(ExtUtils::ParseXS) >= 2.19
-BuildRequires:	perl(File::Spec) >= 3.270.100
+BuildRequires:	perl-PathTools >= 3.270.100
 BuildRequires:	perl(File::Remove)
 BuildRequires:  perl(JSON)
 BuildRequires:	perl(Module::Build)
