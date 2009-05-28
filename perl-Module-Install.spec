@@ -1,14 +1,16 @@
 %define	upstream_name	 Module-Install
-%define upstream_version 0.90
+%define upstream_version 0.91
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	%mkrel 1
+
 Summary:	Standalone, extensible Perl module installer
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
+
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
@@ -28,7 +30,7 @@ BuildRequires:	perl(Test::More) >= 0.86
 BuildRequires:	perl(YAML)
 BuildRequires:	perl(YAML::Tiny)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{upstream_name}-%{upstream_version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module provides a drop-in replacement for ExtUtils::MakeMaker. For
