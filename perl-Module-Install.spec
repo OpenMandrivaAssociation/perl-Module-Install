@@ -25,6 +25,7 @@ BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Module::CoreList)
 BuildRequires:	perl(Module::ScanDeps)
 BuildRequires:	perl(PAR::Dist)
+BuildRequires:	perl(Parse::CPAN::Meta)
 BuildRequires:	perl(Test::Harness) >= 3.13
 BuildRequires:	perl(Test::More) >= 0.86
 BuildRequires:	perl(YAML)
