@@ -1,9 +1,9 @@
 %define	upstream_name	 Module-Install
-%define upstream_version 0.91
+%define upstream_version 0.92
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 
 Summary:	Standalone, extensible Perl module installer
 License:	GPL+ or Artistic
