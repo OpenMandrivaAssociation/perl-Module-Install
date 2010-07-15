@@ -21,6 +21,7 @@ BuildRequires:	perl(ExtUtils::ParseXS) >= 2.19
 BuildRequires:	perl-PathTools >= 3.270.100
 BuildRequires:	perl(File::Remove)
 BuildRequires:  perl(JSON)
+BuildRequires:  perl(LWP::UserAgent)
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Module::CoreList)
 BuildRequires:	perl(Module::ScanDeps)
@@ -30,6 +31,7 @@ BuildRequires:	perl(Test::Harness) >= 3.13
 BuildRequires:	perl(Test::More) >= 0.86
 BuildRequires:	perl(YAML)
 BuildRequires:	perl(YAML::Tiny)
+
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
