@@ -1,5 +1,5 @@
 %define	upstream_name	 Module-Install
-%define upstream_version 0.95
+%define upstream_version 1.00
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -52,7 +52,7 @@ find lib -type f | xargs chmod 644
 %check
 # this one requires a working CPAN configuration
 rm -f t/03_autoinstall.t
-%__make test
+%make test
 
 %install
 %{__rm} -rf %{buildroot}
@@ -63,8 +63,7 @@ rm -f t/03_autoinstall.t
 
 %files
 %defattr(-,root,root)
-%doc README Changes
+%doc README Changes META.yml
 %{perl_vendorlib}/Module
 %{perl_vendorlib}/inc/Module
-%{perl_vendorlib}/auto/share/dist/Module-Install
 %{_mandir}/man3/*
