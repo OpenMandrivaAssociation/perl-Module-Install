@@ -19,6 +19,7 @@ BuildRequires:	perl(ExtUtils::ParseXS) >= 2.19
 BuildRequires:	perl-PathTools >= 3.270.100
 BuildRequires:	perl(File::Remove)
 BuildRequires:  perl(JSON)
+BuildRequires:  perl(JSON::PP)
 BuildRequires:  perl(LWP::UserAgent)
 BuildRequires:	perl(Module::Build)
 BuildRequires:	perl(Module::CoreList)
