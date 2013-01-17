@@ -8,7 +8,7 @@ Release:	5
 Summary:	Standalone, extensible Perl module installer
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
+URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
