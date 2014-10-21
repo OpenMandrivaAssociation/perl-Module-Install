@@ -1,14 +1,14 @@
 %define	modname	Module-Install
-%define modver 1.06
+%define modver 1.12
 
 Summary:	Standalone, extensible Perl module installer
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	4
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Module/Module-Install-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Archive::Tar)
@@ -59,5 +59,3 @@ rm -f t/03_autoinstall.t
 %{perl_vendorlib}/Module
 %{perl_vendorlib}/inc/Module
 %{_mandir}/man3/*
-
-
