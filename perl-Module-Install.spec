@@ -1,5 +1,5 @@
 %define	modname	Module-Install
-%define modver 1.12
+%define modver 1.14
 
 Summary:	Standalone, extensible Perl module installer
 Name:		perl-%{modname}
