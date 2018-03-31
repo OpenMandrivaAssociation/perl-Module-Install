@@ -1,10 +1,10 @@
 %define	modname	Module-Install
-%define modver 1.14
+%define modver 1.19
 
 Summary:	Standalone, extensible Perl module installer
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}

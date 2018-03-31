@@ -1,6 +1,2 @@
-removed_sources:
-  Module-Install-1.01.tar.gz: 4335c4a245645f7be6abb485b3f6d9bf72f6a696
-  Module-Install-1.06.tar.gz: 80a8507ba88fe9332de88225a9f6dec0a8c89a59
-  Module-Install-1.12.tar.gz: 59b78322e714d997e60c0fca8a96957cf1e15f7c
 sources:
-  Module-Install-1.14.tar.gz: 255bff1bdf9e7b0f67eff15d0b4d52662c0f67d7
+  Module-Install-1.19.tar.gz: 6c77b2ec0cd84e07d7c7ae03d1cfa5c21d758f81
