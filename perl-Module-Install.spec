@@ -4,7 +4,7 @@
 Summary:	Standalone, extensible Perl module installer
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
