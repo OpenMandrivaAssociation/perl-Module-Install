@@ -1,21 +1,20 @@
 %define	modname	Module-Install
-%define modver 1.19
 
 Summary:	Standalone, extensible Perl module installer
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	7
+Version:	1.21
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Module::Install
-Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Archive::Tar)
 BuildRequires:	perl(Devel::PPPort) >= 3.16
 BuildRequires:	perl(ExtUtils::Install) >= 1.52
 BuildRequires:	perl(ExtUtils::ParseXS) >= 2.19
-BuildRequires:	perl-PathTools >= 3.270.100
+BuildRequires:	perl-PathTools
 BuildRequires:	perl(File::Remove)
 BuildRequires:	perl(JSON)
 BuildRequires:	perl(JSON::PP)
@@ -38,13 +37,13 @@ Module::Install in June 2003 issue of The Perl Journal
 module works.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 chmod 644 Changes
 find lib -type f | xargs chmod 644
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 # this one requires a working CPAN configuration
@@ -52,7 +51,7 @@ rm -f t/03_autoinstall.t
 %make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README Changes META.yml
