@@ -3,7 +3,7 @@
 Summary:	Standalone, extensible Perl module installer
 Name:		perl-%{modname}
 Version:	1.21
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Module::Install
